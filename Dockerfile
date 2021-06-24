@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LIBEV_FLAGS=4
 
 RUN apt update -y
-RUN apt upgrate -y
+RUN apt upgrade -y
 
 RUN apt-get update --fix-missing
 

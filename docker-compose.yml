@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  service:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: adsonrodrigues/ubuntu-redshift
+    volumes:
+      - .:/usr/local/app
+    ports:
+      - 5439:5439
+    stdin_open: true
+    tty: true
